@@ -34,7 +34,8 @@ Or monitor the serial port and note the IP address then use your browser to conn
 
 Programme Notes:
 1. It uses the ESP Asynchronous Webserver so there is nothing in the loop() section!
-2. The webserver is event based, each event generates a response, there is no need to poll for client connections in the loop section
-3. The loop section is free for your projects!
+2. The webserver is event based (asynchronous), each event generates a response, there is no need to poll for client connections in the loop section
+3. There are test files to try out uploading and download, etc
+4. The loop section is free for your projects!
 
 It is very fast!
