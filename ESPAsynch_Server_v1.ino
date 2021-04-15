@@ -8,6 +8,7 @@
   4. You may not transmit it or store it in any other website or other form of electronic retrieval system for commercial purposes.
   5. You MUST include all of this copyright and permission notice ('as annotated') and this shall be included in all copies or substantial portions of the software
      and where the software use is visible to an end-user.
+  6. *** DONT USE THE SOFTWARE IF YOU DONT LIKE THE LICNCE CONDITIONS ***
   THE SOFTWARE IS PROVIDED "AS IS" FOR PRIVATE USE ONLY, IT IS NOT FOR COMMERCIAL USE IN WHOLE OR PART OR CONCEPT.
   FOR PERSONAL USE IT IS SUPPLIED WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR
   A PARTICULAR PURPOSE AND NONINFRINGEMENT.
@@ -31,7 +32,7 @@
 AsyncWebServer server(80);
 
 //################  VERSION  ###########################################
-String    Version = "2.0";   // Programme version, see change log at end
+String    Version = "1.0";   // Programme version, see change log at end
 //################ VARIABLES ###########################################
 
 typedef struct
