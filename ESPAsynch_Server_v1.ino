@@ -385,11 +385,12 @@ void notFound(AsyncWebServerRequest *request) { // Process selected file types
       MessageLine = "";
       File file = FS.open(filename, "r");
       String contentType = getContentType("download");
-      AsyncWebServerResponse *response = request->beginResponse(contentType, file.size(), [file](uint8_t *buffer, size_t maxLen, size_t total) mutable -> size_t {
-        File filecopy = file;
-        int bytes = filecopy.read(buffer, maxLen);
-        if (bytes + total == filecopy.size()) filecopy.close();
-        return max(0, bytes); 
+      AsyncWebServerResponse *response = request->beginResponse(contentType, file.size(), [file](uint8_t *buffer, size_t maxLen, size_t total) mutable ->  size_t
+                                                                { return file.read(buffer, maxLen); });
+      File filecopy = file;
+      int bytes = filecopy.read(buffer, maxLen);
+      if (bytes + total == filecopy.size()) filecopy.close();
+      return max(0, bytes); 
       });
       response->addHeader("Server", "ESP Async Web Server");
 
