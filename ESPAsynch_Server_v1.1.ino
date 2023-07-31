@@ -484,7 +484,7 @@ void Select_File_For_Function(String title, String function) {
     Fname1 = Filenames[index].filename;
     Fname2 = Filenames[index + 1].filename;
     if (Fname1.startsWith("/")) Fname1 = Fname1.substring(1);
-    if (Fname2.startsWith("/")) Fname1 = Fname2.substring(1);
+    if (Fname2.startsWith("/")) Fname2 = Fname2.substring(1);
     webpage += "<tr>";
     webpage += "<td style='width:25%'><button><a href='" + function + "~/" + Fname1 + "'>" + Fname1 + "</a></button></td><td style = 'width:10%'>" + Filenames[index].fsize + "</td>";
     webpage += "<td class='sp'></td>";
