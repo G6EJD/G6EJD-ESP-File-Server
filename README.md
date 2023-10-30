@@ -1,5 +1,8 @@
 NOTE:
-To get the uploader to work with large files, you need to change line 320 in the Async library in file WebResponses.cpp to:  outLen = sprintf((char*)buf+headLen, "%04x", readLen) + headLen;.
+To get the uploader to work with large files, you need to change line 320 in the Async library in file WebResponses.cpp to:
+
+outLen = sprintf((char*)buf+headLen, "%04x", readLen) + headLen;
+
 The original formatter was %x and then used spaces to fill. This will format it with leading zeros up to 4 places. 
 
 # ESP-File-Server
