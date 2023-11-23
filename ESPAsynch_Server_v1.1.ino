@@ -391,7 +391,7 @@ void notFound(AsyncWebServerRequest *request) { // Process selected file types
       request->send(response);
       downloadtime = millis() - start;
       downloadsize = GetFileSize(filename);
-      request->redirect("/dir");
+      //request->redirect("/dir");
     }
     if (request->url().startsWith("/streamhandler"))
     {
@@ -401,7 +401,7 @@ void notFound(AsyncWebServerRequest *request) { // Process selected file types
       request->send(response);
       downloadsize = GetFileSize(filename);
       downloadtime = millis() - start;
-      request->redirect("/dir");
+      //request->redirect("/dir");
     }
     if (request->url().startsWith("/deletehandler"))
     {
