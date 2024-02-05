@@ -46,3 +46,7 @@ Programme Notes:
 4. The loop section is free for your projects!
 
 It is very fast!
+
+V2 Notes:
+1. Converted to SD Card from SPIFFS
+2. Some functions like Format are not supported with the SD Card library
